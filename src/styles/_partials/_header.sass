@@ -1,0 +1,30 @@
+header
+	background-color: #fff
+	.navbar
+		+pad(0)
+	.navbar-brand
+		img 
+			max-height: 1rem
+	ul
+		li
+			line-height: 1rem
+			width: 60px
+			text-align: center
+			a
+				color: #000
+	/*Reponsive on medium devices*/
+	+media-breakpoint-up(sm)
+		.navbar-brand
+			img 
+				max-height: 2rem
+	/*Reponsive on large devices*/
+	+media-breakpoint-up(lg)
+		ul
+			li
+				line-height: 3rem
+				a
+				&:hover,&:active
+					box-shadow: inset 0px 4px 0px -1px rgba(150,65,162,1)
+					transition: .3s all ease-in-out
+					a 
+						color: rgba(150,65,162,1)

@@ -1,0 +1,59 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	//- HOME NEWS
+	section.home_news
+		.container
+			.row
+				.col-12.mb-5.title
+					h2 Tin tức
+				.col-md-4.news_items
+					a(href="#")
+						figure.figure
+							.figure-img
+								img(src="./img/home_news_1.png", alt="")
+							figcaption.figure-caption
+								h3 Lorem ipsum dolor sit amet
+								time 23/8/2018
+								p Cum mollitia dolores consectetur dignissimos quo sit nostrum architecto aliquid voluptatibus, itaque nobis possimus quos soluta dolorum
+				.col-md-4.news_items
+					a(href="#")
+						figure.figure
+							.figure-img
+								img(src="./img/home_news_2.png", alt="")
+							figcaption.figure-caption
+								h3 Lorem ipsum dolor sit amet
+								time 23/8/2018
+								p Consectetur adipisicing elit. Cum mollitia dolores consectetur dignissimos quo sit nostrum architecto aliquid voluptatibus.
+				.col-md-4.news_items
+					a(href="#")
+						figure.figure
+							.figure-img
+								img(src="./img/home_news_3.png", alt="")
+							figcaption.figure-caption
+								h3 Lorem ipsum dolor sit amet
+								time 23/8/2018
+								p Cum mollitia dolores consectetur dignissimos quo sit nostrum architecto aliquid voluptatibus, itaque nobis.
+
+	section.home_trademark
+		.container
+			.row
+				.col
+					.owl-carousel.owl-theme
+						.items
+							img.img-fluid(src="./img/home_logo_1.png", alt="")
+						.items
+							img.img-fluid(src="./img/home_logo_2.png", alt="")
+						.items
+							img.img-fluid(src="./img/home_logo_3.png", alt="")
+						.items
+							img.img-fluid(src="./img/home_logo_4.png", alt="")
+						.items
+							img.img-fluid(src="./img/home_logo_5.png", alt="")
+						.items
+							img.img-fluid(src="./img/home_logo_6.png", alt="")
